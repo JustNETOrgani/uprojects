@@ -1,0 +1,5 @@
+.env
+venv/
+anticounterfeit.db
+__pycache__/
+.env

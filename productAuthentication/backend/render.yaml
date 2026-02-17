@@ -1,0 +1,13 @@
+services:
+- type: web
+  name: blockchain-Anti-Counterfeit
+  runtime: python
+  repo: https://github.com/obirikan/blockchain-Anti-Counterfeit
+  branch: feat/verify
+  plan: free
+  region: oregon
+  buildCommand: 'cd backend && pip install --upgrade pip setuptools wheel && pip install --only-binary=all --no-cache-dir -r requirements.txt'
+  startCommand: cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+  autoDeployTrigger: commit
+  python:
+    version: 3.12.0

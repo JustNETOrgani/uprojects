@@ -1,0 +1,50 @@
+{
+  "verification_latency": {
+    "average": 0.01872258186340332,
+    "min": 0.008729934692382812,
+    "max": 0.07882285118103027,
+    "median": 0.011171460151672363,
+    "successful_requests": 10,
+    "total_requests": 10,
+    "target": 3.0,
+    "passed": true
+  },
+  "qr_processing": {
+    "average": 0.009054851531982423,
+    "min": 0.006590843200683594,
+    "max": 0.013418912887573242,
+    "median": 0.008675456047058105,
+    "successful_requests": 10,
+    "total_requests": 10,
+    "target": 0.4,
+    "passed": true
+  },
+  "api_endpoints": {
+    "/api/v1/products/": {
+      "average": 0.008437108993530274,
+      "min": 0.006937742233276367,
+      "max": 0.009835004806518555,
+      "median": 0.008678913116455078
+    },
+    "/api/v1/analytics/overview": {
+      "average": 0.009816837310791016,
+      "min": 0.007365226745605469,
+      "max": 0.01281881332397461,
+      "median": 0.010181188583374023
+    },
+    "/api/v1/verifications/": {
+      "average": 0.005816268920898438,
+      "min": 0.005261659622192383,
+      "max": 0.006438732147216797,
+      "median": 0.005906105041503906
+    }
+  },
+  "concurrent_load": {
+    "total_requests": 15,
+    "concurrent_users": 5,
+    "average": 0.018877188364664715,
+    "min": 0.015496015548706055,
+    "max": 0.024116992950439453,
+    "median": 0.017627954483032227
+  }
+}
